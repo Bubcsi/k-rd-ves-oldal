@@ -11,32 +11,37 @@
       padding: 20px;
       max-width: 600px;
       margin: auto;
-      text-align: center;
     }
+
     img.banner {
       max-width: 100%;
       height: auto;
+      max-height: 300px; /* <<< Banner max magasság */
       margin-bottom: 20px;
       border-radius: 8px;
+      object-fit: contain;
     }
+
     .site-section {
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
       padding: 20px;
       margin-bottom: 20px;
-      text-align: left;
     }
+
     .site-title {
       font-size: 1.5em;
       color: #333;
       margin-bottom: 10px;
     }
+
     .site-description {
       font-size: 1em;
       color: #555;
       margin-bottom: 15px;
     }
+
     .btn-link {
       display: inline-block;
       background-color: #4CAF50;
@@ -47,12 +52,20 @@
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
+
     .btn-link:hover {
       background-color: #45a049;
+    }
+
+    .counter {
+      text-align: center;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Banner -->
   <img src="vekonybanner.png" alt="Banner" class="banner" />
 
   <h1>Üdv a kérdőíves oldalon!</h1>
@@ -82,9 +95,14 @@
     <a class="btn-link" href="https://mobrog.com/?membership_promotion=0&i_invite=24661191-686a65a4b9302&rkm=38" target="_blank" rel="noopener noreferrer">Regisztrálj a Mobrog-ra</a>
   </div>
 
-  <!-- hitwebcounter Code START -->
-  <a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=21090458&style=0009&nbdigits=5&type=page&initCount=0" title="Counter Widget" alt="Visit counter For Websites" border="0" />
-  </a>
+  <!-- Számláló -->
+  <div class="counter">
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21090458&style=0009&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+    </a>
+  </div>
+
 </body>
 </html>
