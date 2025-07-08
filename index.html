@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
@@ -13,10 +13,13 @@
       margin: auto;
     }
     .banner {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
+      text-align: center;
       margin-bottom: 20px;
+    }
+    .banner img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
     }
     .site-section {
       background: #fff;
@@ -48,11 +51,16 @@
     .btn-link:hover {
       background-color: #45a049;
     }
+    .counter {
+      text-align: center;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
-
-  <img class="banner" src="kicsibanner.png" alt="Banner" />
+  <div class="banner">
+    <img src="kicsibanner.png" alt="Banner">
+  </div>
 
   <h1>Üdv a kérdőíves oldalon!</h1>
   <p>Itt megtalálod a legjobb kérdőíves oldalakat, ahol PayPal-ra fizetnek.</p>
@@ -81,5 +89,11 @@
     <a class="btn-link" href="https://mobrog.com/?membership_promotion=0&i_invite=24661191-686a65a4b9302&rkm=38" target="_blank" rel="noopener noreferrer">Regisztrálj a Mobrog-ra</a>
   </div>
 
+  <div class="counter">
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21090458&style=0009&nbdigits=5&type=page&initCount=0" title="Counter Widget" alt="Visit counter For Websites" border="0" />
+    </a>
+  </div>
 </body>
 </html>
